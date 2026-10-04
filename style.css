@@ -1,0 +1,46 @@
+:root{
+  --bg:#050907;--panel:rgba(13,22,17,.76);--panel2:#0b1510;
+  --text:#f4f7f4;--muted:#98a49c;--green:#19d77b;--green2:#0d9e58;
+  --line:rgba(255,255,255,.09);--radius:24px;--max:1120px;
+}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:
+ radial-gradient(circle at 50% -10%,rgba(25,215,123,.14),transparent 35%),
+ linear-gradient(180deg,#050907 0%,#07100b 50%,#050806 100%);
+ color:var(--text);font-family:Tahoma,Arial,sans-serif;overflow-x:hidden}
+a{color:inherit;text-decoration:none}.bg-glow{position:fixed;width:380px;height:380px;border-radius:50%;filter:blur(100px);opacity:.09;pointer-events:none}
+.glow-1{background:#19d77b;top:20%;right:-200px}.glow-2{background:#39aaff;bottom:0;left:-220px}
+.nav{width:min(var(--max),calc(100% - 32px));margin:auto;padding:22px 0;display:flex;align-items:center;justify-content:space-between;position:relative;z-index:3}
+.brand{display:flex;align-items:center;gap:11px}.brand-mark{width:42px;height:42px;display:grid;place-items:center;border:1px solid rgba(25,215,123,.4);border-radius:13px;color:var(--green);background:rgba(25,215,123,.07);font-size:22px;box-shadow:0 0 30px rgba(25,215,123,.08)}
+.brand b{display:block;font-size:16px}.brand small{display:block;color:var(--muted);font-size:11px;margin-top:3px}
+.nav-btn{border:1px solid var(--line);padding:10px 16px;border-radius:12px;color:#dfe7e1;font-size:13px;background:rgba(255,255,255,.025)}
+.hero{width:min(var(--max),calc(100% - 32px));margin:auto;text-align:center;padding:76px 0 35px}
+.hero-badge,.eyebrow{display:inline-flex;border:1px solid rgba(25,215,123,.2);background:rgba(25,215,123,.06);color:#72e7aa;border-radius:999px;padding:8px 13px;font-size:12px}
+.hero h1{font-size:clamp(42px,7vw,78px);line-height:1.08;letter-spacing:-2px;margin:20px 0 17px}
+.hero h1 span{color:var(--green);text-shadow:0 0 35px rgba(25,215,123,.18)}
+.hero p{max-width:650px;margin:0 auto;color:var(--muted);font-size:16px;line-height:1.9}
+.hero-actions{display:flex;justify-content:center;gap:12px;margin:30px 0 45px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:14px 24px;border-radius:14px;font-weight:700;font-size:14px;transition:.2s;cursor:pointer}
+.btn:hover{transform:translateY(-2px)}.primary{background:linear-gradient(135deg,var(--green),#0ba75b);color:#041008;box-shadow:0 12px 35px rgba(25,215,123,.13)}
+.ghost{border:1px solid var(--line);background:rgba(255,255,255,.025)}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);max-width:760px;margin:auto;border:1px solid var(--line);background:rgba(255,255,255,.02);border-radius:20px;overflow:hidden}
+.stat{padding:22px;border-left:1px solid var(--line)}.stat:last-child{border-left:0}
+.stat strong{display:block;color:var(--green);font-size:26px}.stat span{display:block;color:var(--muted);font-size:12px;margin-top:7px}
+.section{width:min(var(--max),calc(100% - 32px));margin:0 auto;padding:75px 0}
+.section-head{text-align:center;margin-bottom:30px}.section-head h2{font-size:34px;margin:12px 0 9px}.section-head p{color:var(--muted);font-size:14px}
+.plans{display:grid;grid-template-columns:repeat(5,1fr);gap:13px;align-items:stretch}
+.plan{position:relative;background:linear-gradient(180deg,rgba(16,28,20,.92),rgba(8,15,11,.92));border:1px solid var(--line);border-radius:var(--radius);padding:23px 18px;display:flex;flex-direction:column;min-height:290px;transition:.25s}
+.plan:hover{transform:translateY(-5px);border-color:rgba(25,215,123,.28)}
+.plan.best{border-color:rgba(25,215,123,.55);box-shadow:0 0 35px rgba(25,215,123,.08)}
+.tag{position:absolute;top:-11px;right:16px;background:var(--green);color:#031009;border-radius:999px;padding:5px 10px;font-size:10px;font-weight:800}
+.plan h3{font-size:13px;color:var(--muted);font-weight:400}.plan .price{font-size:29px;font-weight:800;margin:8px 0}.plan .return{font-size:13px;color:#aeb9b1;line-height:1.8}.plan .return b{display:block;color:#e8eee9;font-size:18px}.plan .buy{margin-top:auto;padding-top:20px}
+.course-card{border:1px solid var(--line);background:linear-gradient(135deg,rgba(18,36,25,.9),rgba(8,15,11,.96));border-radius:30px;padding:38px;display:grid;grid-template-columns:1fr 1.1fr;gap:35px;overflow:hidden;position:relative}
+.course-card:before{content:"";position:absolute;width:280px;height:280px;border-radius:50%;background:rgba(25,215,123,.1);filter:blur(80px);top:-130px;right:-100px}
+.course-copy{position:relative;z-index:1}.course-copy h2{font-size:37px;margin:14px 0}.course-copy p{color:var(--muted);line-height:1.9}.course-price{font-size:30px;font-weight:800;margin:22px 0}.course-price small{font-size:14px;color:var(--muted)}
+.weeks{display:grid;grid-template-columns:1fr 1fr;gap:12px;position:relative;z-index:1}
+.week{border:1px solid var(--line);background:rgba(0,0,0,.18);border-radius:18px;padding:19px}.week span{color:var(--green);font-size:12px}.week h3{font-size:15px;margin:9px 0 7px}.week p{color:var(--muted);font-size:12px;line-height:1.8;margin:0}
+.feature-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.feature{padding:25px;border:1px solid var(--line);background:rgba(255,255,255,.025);border-radius:20px}.feature-icon{font-size:25px}.feature h3{font-size:16px;margin:13px 0 7px}.feature p{color:var(--muted);font-size:13px;line-height:1.8;margin:0}
+footer{border-top:1px solid var(--line);width:min(var(--max),calc(100% - 32px));margin:auto;padding:35px 0 45px;display:grid;grid-template-columns:1fr auto;gap:20px;color:var(--muted);font-size:12px}
+footer b{color:#fff;font-size:16px}footer p{margin:8px 0 0}.footer-links{display:flex;gap:20px;align-items:center}.footer-links a:hover{color:var(--green)}footer>small{grid-column:1/-1;padding-top:15px;border-top:1px solid var(--line)}
+@media(max-width:900px){.plans{grid-template-columns:repeat(2,1fr)}.plan:last-child{grid-column:1/-1}.course-card{grid-template-columns:1fr}}
+@media(max-width:600px){.nav{padding:16px 0}.nav-btn{padding:9px 12px}.hero{padding-top:55px}.hero h1{font-size:43px}.hero p{font-size:14px}.stats{grid-template-columns:1fr}.stat{border-left:0;border-bottom:1px solid var(--line)}.stat:last-child{border-bottom:0}.section{padding:55px 0}.section-head h2{font-size:27px}.plans{grid-template-columns:1fr}.plan:last-child{grid-column:auto}.course-card{padding:24px;border-radius:22px}.course-copy h2{font-size:29px}.weeks{grid-template-columns:1fr}.feature-grid{grid-template-columns:1fr}footer{grid-template-columns:1fr}.footer-links{flex-wrap:wrap}.footer-links a{padding:3px 0}}
